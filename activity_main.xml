@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/light_grey"
+    android:padding="32dp">
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@android:drawable/ic_menu_my_calendar"
+        android:layout_marginBottom="24dp"
+        app:tint="@color/blue_primary" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:textColor="@color/blue_primary"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book your medical appointments quickly and easily. Choose a doctor, date and time that suits you best."
+        android:textColor="@color/text_dark"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/btnBookAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Book Appointment"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/blue_primary"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

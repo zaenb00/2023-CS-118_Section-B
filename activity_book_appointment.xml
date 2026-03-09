@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Appointment"
+            android:textColor="@color/blue_primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Full Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textColor="@color/text_dark"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your full name"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Phone Number -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textColor="@color/text_dark"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your phone number"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Email Address -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:textColor="@color/text_dark"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email address"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Appointment Type -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment Type"
+            android:textColor="@color/text_dark"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Appointment Date -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment Date"
+            android:textColor="@color/text_dark"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/tvSelectedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No date selected"
+            android:textColor="@color/text_muted"
+            android:textSize="13sp"
+            android:layout_marginBottom="6dp"/>
+        <Button
+            android:id="@+id/btnPickDate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Pick Date"
+            android:backgroundTint="@color/blue_primary"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Appointment Time -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment Time"
+            android:textColor="@color/text_dark"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/tvSelectedTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No time selected"
+            android:textColor="@color/text_muted"
+            android:textSize="13sp"
+            android:layout_marginBottom="6dp"/>
+        <Button
+            android:id="@+id/btnPickTime"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Pick Time"
+            android:backgroundTint="@color/blue_primary"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Gender -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="@color/text_dark"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="@color/text_dark"
+                android:layout_marginEnd="16dp"/>
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="@color/text_dark"
+                android:layout_marginEnd="16dp"/>
+
+            <RadioButton
+                android:id="@+id/rbOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:textColor="@color/text_dark"/>
+
+        </RadioGroup>
+
+        <!-- Terms and Conditions -->
+        <CheckBox
+            android:id="@+id/cbTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I accept the Terms and Conditions"
+            android:textColor="@color/text_dark"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Confirm Button -->
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Confirm Booking"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/green_confirm"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>
